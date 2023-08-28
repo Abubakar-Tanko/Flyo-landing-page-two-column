@@ -1,0 +1,383 @@
+--root{
+    color: hsl(243, 87%, 12%);
+    color: hsl(238, 22%, 44%);
+    color: hsl(224, 93%, 58%);
+    color: hsl(170, 45%, 43%);
+    color: hsl(240, 75%, 98%);
+    color: hsl(0, 0%, 75%);
+}
+@font-face {
+    font-family: 'ralewayR';
+    src: url(Raleway/static/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: 'ralewayB';
+    src: url(Raleway/static/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: 'opensanR';
+    src: url(Open_sans/static/OpenSans-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+div#top{
+    padding: 30px 50px;
+}
+div#left{
+    float: left;
+}
+div#right{
+    display: flex;
+    gap: 50px;
+    float: right;
+    font-family: ralewayR;
+    font-size: 14px;
+    color: hsl(238, 22%, 44%);
+}
+section{
+    clear: both;
+    padding: 50px;
+}
+section.flex{
+    display: flex;
+    gap: 30px;
+}
+section.one{
+    gap: 158px;
+}
+section.two{
+    background-image: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    gap: 158px;
+}
+h1{
+    font-size: 35px;
+    width: 589px;
+    font-family: ralewayB;
+}
+div.info{
+    width: 50%;
+}
+div.image{
+    width: 50%;
+}
+div.image> img{
+    width: 96%;
+}
+section.three{
+    background-color: hsl(238, 22%, 44%);
+    gap: 130px;
+    color: hsl(240, 75%, 98%);
+}
+section.three p{
+    width: 418px;
+}
+p#display{
+    display: none;
+    color: rgb(221, 0, 0);
+    width: inherit;
+    font-size: 12px;
+    margin-top: 4px;
+    font-family: ralewayR;
+}
+p#displays{
+    display: none;
+    font-size: 12px;
+}
+p{
+    font-family: ralewayR;
+    font-size: 14px;
+}
+ul li{
+    list-style-type: none;
+    line-height: 2;
+    font-size: 14px;
+    font-family: opensanR;
+}
+ul li:hover{
+    color: hsla(224, 93%, 58%, 0.9);
+    cursor: pointer;
+}
+ul#icons{
+    display: flex;
+    gap: 20px;
+}
+ul#icons li{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    padding-top: 1px;
+}
+ul#icons li:hover{
+    border: 1px solid hsl(224, 93%, 58%);
+}
+div#flyo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(170, 45%, 43%);
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+    width: 160px;
+    margin: 20px 0;
+}
+div#flyo a:hover{
+    filter: opacity(0.6);
+}
+div#flyo:hover{
+    border-bottom: 2px solid hsla(170, 45%, 43%, 0.5);
+    cursor: pointer;
+}
+div#box{
+    background-color: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 75%);
+}
+div#avatar{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+div#man{
+    width: 40px;
+}
+div#man> img{
+    width: 100%;
+    border-radius: 50%;
+}
+div#name p:last-child{
+    font-size: 10px;
+}
+.three, .four{
+    margin-bottom: 18px;
+}
+.logo{
+    width: 100px;
+}
+.logo> img{
+    width: 100%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(240, 75%, 98%);
+    margin-top: -18px;
+}
+div#rowD{
+    display: flex;
+    gap: 240px;
+}
+div.icon{
+    display: flex;
+    gap: 10px;
+    line-height: 2;
+    font-family: opensanR;
+    font-size: 14px;
+}
+section.one p{
+    width: 462px;
+}
+section.two p:not(div#name p){
+    width: 475px;
+    margin: 18px 0;
+}
+section.two div#box> p:not(div#name p){
+    width: 299px;
+}
+input{
+    padding: 8px;
+    margin-top: 18px;
+    border: 1px solid hsl(240, 75%, 98%);
+    border-radius: 4px;
+    outline: none;
+    font-family: opensanR;
+    font-size: 14px;
+}
+form input[type='email']{
+    padding: 8px 20px;
+    border-color: hsl(0, 0%, 75%);
+    transition: 0.4s;
+}
+form#fst{
+    display: flex;
+    gap: 14px;
+}
+form#fst> div{
+    width: 207px;
+}
+form#fst input[type='submit']{
+    width: 150px;
+}
+form#fst> input[type='email']{
+    width: 255px;
+}
+form#fst> input[type='submit']:hover{
+    background-color: hsla(224, 93%, 58%, 0.8);
+}
+form input[type="submit"]{
+    color: hsl(240, 75%, 98%);
+    max-height: 37px;
+}
+form#input> input[type='email']{
+    width: 350px;
+    border-radius: 2px;
+}
+input[type="submit"]{
+    background-color: hsl(224, 93%, 58%);
+    padding: 8px 20px;
+    border-radius: 2px;
+    border: none;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+form#input> input[type="submit"]:hover{
+    filter: brightness(1.2);
+}
+div#footd{
+    margin: 0;
+}
+p.attribution{
+    font-size: 14px;
+    font-family: ralewayR;
+    padding: 0;
+}
+p.attribution a{
+    transition: 0.2s;
+}
+p.attribution a:hover{
+    font-size: 16px;
+    text-decoration: none;
+    font-family: ralewayB;
+}
+@media screen and (max-width: 375px) {
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div#top> div#left{
+        width: 100px;
+    }
+    div#left img{
+        width: 100%;
+    }
+    div#top> div#right{
+        font-size: 10px;
+        gap: 18px;
+        float: right;
+    }
+    section.flex{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    section.flex> div.image{
+        width: 300px;
+    }
+    section.flex> div.image img{
+        width: 100%;
+    }
+    section.flex> div.info{
+        width: 300px;
+    }
+    section.one, section.three{
+        text-align: center;
+    }
+    section.three{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    section.three form{
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+    section.two p{
+        width: 312px !important;
+    }
+    section.two div#box> p:not(div#name p){
+        font-size: 12px;
+        width: 267px !important;
+    }
+    div#man{
+        width: 50px;
+    }
+    div#man img{
+        width: 50px;
+    }
+    form#fst{
+        display: flex;
+        flex-direction: column;
+    }
+    form input{
+        width: 100%;
+    }
+    form#fst input[type='submit'], form div, form input[type='email']{
+        width: 100% !important;
+    }
+    footer{
+        padding: 35px 50px;
+    }
+    footer div#rowD{
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+    }
+    ul#icons{
+        display: flex;
+        justify-content: center;
+    }
+    div#flyo{
+        text-align: center;
+        margin-left: 60px;
+    }
+    div#box{
+        width: 100%;
+    }
+    .logo{
+        width: 200px;
+    }
+    .logo> img{
+        width: 100%;
+    }
+    h1{
+        font-size: 25px;
+        width: 104%;
+    }
+    h1#second{
+        width: 123%;
+        font-size: 18px;
+    }
+    h2{
+        margin-bottom: 15px;
+    }
+    p{
+        width: 100% !important;
+    }
+    p#last{
+        width: 91% !important;
+    }
+    p.attribution{
+        font-size: 12px;
+    }
+    p.attribution a:hover{
+        font-size: 14px;
+    }
+}

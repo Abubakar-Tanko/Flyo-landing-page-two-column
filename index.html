@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <script src="https://kit.fontawesome.com/5e4423f596.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="top">
+    <div id="left">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div id="right">
+      <span>
+        Features
+      </span>
+      <span>
+        Team
+      </span>
+      <span>
+        Sign In
+      </span>
+    </div>
+  </div>
+  <section class="flex one">
+    <div class="info">
+      <h1>All your files in one secure location, accessible anywhere.</h1>
+
+      <p>Fylo stores your most important files in one secure location. 
+      Access them wherever you need, share and collaborate with friends, 
+      family, and co-workers.</p>
+      <form id="fst">
+        <div>
+          <input type="email" required placeholder="Enter your email..." pattern="{a-z0-9}+@"
+          oninvalid="setCustomValidity('please check your email')" oninput="setCustomValidity('')" name="email" autocomplete="on">
+          <p id="display">Please check your email</p>
+        </div>
+         <input onclick="press()" type="submit" value="Get Started" name="submit">        
+      </form>
+        <script>
+          function press() {
+            document.getElementById('display').style.display = 'block'
+          }
+        </script>
+
+    </div>
+    <div class="image">
+      <img src="images/illustration-1.svg" alt="">
+    </div>
+  </section>
+
+  <section class="flex two">
+    <div class="info">
+      <h1 id="second">Stay productive, wherever you are</h1>
+
+      <p>Never let location be an issue when accessing your files. Fylo has you 
+      covered for all of your file storage needs.</p>
+
+      <p>Securely share files and folders with friends, family and colleagues for 
+      live collaboration. No email attachments required!</p>
+
+      <div id="flyo"><a>See how Fylo works <img src="images/icon-arrow.svg" alt=""></a>
+        
+      </div>
+
+      <div id="box">
+        <span><img src="images/icon-quotes.svg" alt=""></span>
+        <p>Fylo has improved our team productivity by an order of magnitude. Since 
+        making the switch our team has become a well-oiled collaboration machine.</p>
+
+        <div id="avatar">
+          <div id="man"><img src="images/avatar-testimonial.jpg" alt=""></div>
+          <div id="name">
+            <p><b>Kyle Burton</b></p>
+            <p>Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image"><img src="images/illustration-2.svg" alt=""></div>
+  </section>
+
+  <section class="flex three">
+    <div class="info">
+      <h2>Get early access today</h2>
+
+      <p id="last">It only takes a minute to sign up and our free starter tier is extremely generous. 
+      If you have any questions, our support team would be happy to help you.</p>
+    </div>
+    <form id="input">
+      <input type="email" placeholder="email@example.com" required pattern="{a-z0-9}+@"
+      oninvalid="setCustomValidity('please check your email')"  oninput="setCustomValidity('')" name="email" autocomplete="on"><br>
+      <p id="displays">Please check your email</p>
+      <input onclick="push()" type="submit" value="Get Started For Free" name="submit">     
+    </form>
+      <script>
+        function push() {
+          document.getElementById('displays').style.display = 'block'
+        }
+      </script>
+  </section>
+
+  <footer class="flex four">
+    <div class="logo"><img src="images/footer-logo.svg" alt=""></div>
+    <div id="rowD">
+      <div>
+        <div class="icon"><span><img src="images/icon-phone.svg" alt=""></span><p>Phone: +1-543-123-4567</p></div>
+        <div class="icon"><span><img src="images/icon-email.svg" alt=""></span><p>example@fylo.com</p></div>
+      </div>
+
+      <ul>
+        <li>About Us</li>
+        <li>Jobs</li>
+        <li>Press</li>
+        <li>Blog</li>
+      </ul>
+
+      <ul>
+        <li>Contact Us</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+
+      <ul id="icons">
+        <li><i class="fa-brands fa-facebook-f"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+      </ul>
+    </div>
+
+
+  </footer>
+
+
+
+
+  <div id="footd">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.facebook.com/profile.php?id=100080732089095">Abubakar Tanko</a>.
+    </p>
+  </div>
+</body>
+</html>
